@@ -1,6 +1,6 @@
 # booklist
 
-This is a web application for cataloguing your book
+This is a web application for cataloguing your book collection. It's built with Ember JS and Tailwind CSS.
 
 
 <h3>Issues faced & resolution:</h3>
@@ -8,6 +8,8 @@ This is a web application for cataloguing your book
 
 <h3>Technology used:</h3>
 
+- Ember JS
+- Tailwind CSS
 
 
 <h3>Link to site:</h3>
