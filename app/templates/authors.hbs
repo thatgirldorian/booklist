@@ -1,2 +1,8 @@
 {{page-title "Authors"}}
-{{outlet}}
+
+
+<ul>
+    {{#each @model as |author|}}
+        <li>{{author.name}}</li>
+    {{/each}}
+</ul>
