@@ -83,6 +83,12 @@
             books: [gildedOnes],
         });
 
-        return [traceyDeonn, saChakraborty, rfKuang, naminaForna];
+        let silviaMorenoGarcia = new Author({
+            id: 'silviaMorenoGarcia',
+            name: 'Silvia Moreno-Garcia',
+            books: [],
+        })
+
+        return [traceyDeonn, saChakraborty, rfKuang, naminaForna, silviaMorenoGarcia];
     }
 }
