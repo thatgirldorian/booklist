@@ -1,8 +1,8 @@
-import Route from '@ember/routing/route';
-import { tracked } from '@glimmer/tracking';
+    import Route from '@ember/routing/route';
+    import { tracked } from '@glimmer/tracking';
 
-//Create classes to hold the model/route objects
-class Author {
+    //Create classes to hold the model/route objects
+    class Author {
     @tracked name;
 
     constructor({ id, name, books }) {
@@ -10,79 +10,79 @@ class Author {
         this.name = name;
         this.books = books;
     }
-}
+    }
 
-class Book {
+    class Book {
     constructor({ title, starRating, author }) {
         this.title = title;
         this.starRating = starRating ?? 0;
         this.band = author;
     }
-}
+    }
 
-//Define the model hook for the authors route
-export default class AuthorsRoute extends Route {
-model() {
-    let legendBorn = new Book({
-        title: 'Legendborn',
-        author: 'Tracey Deonn',
-        starRating: 5,
-    });
+    //Define the model hook for the authors route
+    export default class AuthorsRoute extends Route {
+    model() {
+        let legendBorn = new Book({
+            title: 'Legendborn',
+            author: 'Tracey Deonn',
+            starRating: 5,
+        });
 
-    let cityOfBrass = new Book({
+        let cityOfBrass = new Book({
             title: 'City of Brass',
             author: 'S. A. Chakraborty',
             starRating: 5,
         });
 
-    let kingdomOfCopper = new Book({
+        let kingdomOfCopper = new Book({
             title: 'Kingdom of Copper',
             author: 'S. A. Chakraborty',
             starRating: 4.9,
         });
 
-    let poppyWar = new Book({
+        let poppyWar = new Book({
             title: 'The Poppy War',
             author: 'R. F Kuang',
-            starRating: 4.8
-        })
+            starRating: 4.8,
+        });
 
-    let dragonRepublic = new Book({
+        let dragonRepublic = new Book({
             title: 'The Dragon Republic',
             author: 'R. F Kuang',
-            starRating: 4.9
-        })
+            starRating: 4.9,
+        });
 
-    let gildedOnes = new Book({
+        let gildedOnes = new Book({
             title: 'The Gilded Ones',
             author: 'Namina Forna',
-            starRating: 4.8
-        })
+            starRating: 4.8,
+        });
 
-    let rfKuang = new Author({
+        let rfKuang = new Author({
             id: 'rfKuang',
             name: 'R. F Kuang',
-            books: [poppyWar, dragonRepublic]
-        })
+            books: [poppyWar, dragonRepublic],
+        });
 
-    let traceyDeonn = new Author({
-            id: 'traceyDeon',
+        let traceyDeonn = new Author({
+            id: 'traceyDeonn',
             name: 'Tracey Deonn',
-            books: [legendBorn]
-        })
+            books: [legendBorn],
+        });
 
-    let saChakraborty = new Author({
+        let saChakraborty = new Author({
             id: 'saChakaborty',
             name: 'S. A. Chakraborty',
-            books: [cityOfBrass, kingdomOfCopper]
-        })
+            books: [cityOfBrass, kingdomOfCopper],
+        });
 
-    let naminaForna = new Author({
+        let naminaForna = new Author({
             id: 'naminaForna',
             name: 'Namina Forna',
-            books: [gildedOnes]
-        })
+            books: [gildedOnes],
+        });
 
-        return [traceyDeonn, saChakraborty, rfKuang, naminaForna]
+        return [traceyDeonn, saChakraborty, rfKuang, naminaForna];
     }
 }

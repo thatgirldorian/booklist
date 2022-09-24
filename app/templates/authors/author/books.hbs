@@ -1,0 +1,18 @@
+{{!-- Display the title of each book and its rating --}}
+
+{{#if @model.length }}
+
+    <ul>
+        {{#each @model as |book|}}
+        <li class="mb-2">
+            {{book.title}}
+            <span class="float-right">{{book.rating}}</span>
+        </li>
+        {{/each}}
+    </ul>
+    {{else}}
+        <p class="text-center">
+            This author has no books added yet. 
+        </p>
+
+{{/if}}

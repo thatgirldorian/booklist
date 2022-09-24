@@ -1,8 +1,18 @@
 {{page-title "Authors"}}
 
 
-<ul>
+<div class="w-1/3 px-2">
+    <ul class="pl-2 pr-8">
     {{#each @model as |author|}}
-        <li>{{author.name}}</li>
+        <li class="mb-2">
+            <LinkTo @route="authors.author.books" @model={{author.id}}>
+                {{author.name}}
+            </LinkTo>
+        </li>
     {{/each}}
 </ul>
+</div>
+
+<div class="w-2/3 px-2">
+    {{outlet}}
+</div>
