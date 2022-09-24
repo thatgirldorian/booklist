@@ -1,0 +1,16 @@
+{{page-title "Books"}}
+
+    <ul>
+                {{#each
+                    (array
+                        (hash title="The Poppy War" author="R. F Kuang" star-rating=4.5)
+                        (hash title="City of Brass" author="S.A Chakraborty" star-rating=5)
+                        (hash title="Legendborn" author="Tracy Deonn" star-rating=4.5)
+                    ) as |book|
+                }}
+
+                <li class="leading-loose">
+                    {{book.title}} by {{book.author}} <span class="float-right">{{book.star-rating}} stars</span> 
+                </li>
+                {{/each}}
+    </ul>
