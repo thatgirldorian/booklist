@@ -10,13 +10,14 @@
                 </h1>
             </a>
         </div>
-        {{!-- Add a navigation link --}}
+        {{!-- Add a navigation link
         <nav class="h-8 flex items-center mb-8">
             <LinkTo class="hover:text-gray-500" @route="authors">Authors</LinkTo>
             <LinkTo class="hover:text-gray-500 ml-4" @route="books" >Books</LinkTo>
-        </nav>
-
+        </nav> --}}
+        <div class="flex flex-wrap -mx-2">
             {{outlet}}
+        </div>
     </div>
 </div>
 
