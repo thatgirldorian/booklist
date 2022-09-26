@@ -29,6 +29,7 @@
     "@embroider/core": "^1.8.3",
     "@embroider/webpack": "^1.8.3",
     "@fortawesome/ember-fontawesome": "^0.4.1",
+    "@fortawesome/free-regular-svg-icons": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",

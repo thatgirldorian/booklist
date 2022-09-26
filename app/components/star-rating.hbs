@@ -1,8 +1,8 @@
 {{!-- Render the stars component --}}
 
 {{#each this.stars as |star|}}
-    <FaIcon 
-        @icon="star"
-        @prefix={{if star.full "fas" "far"}}
-    />
+<FaIcon
+    @icon="star"
+    @prefix={{if star.full "fa-solid" "fa-regular"}}
+/>
 {{/each}}
