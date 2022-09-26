@@ -7,6 +7,7 @@ export default class Router extends EmberRouter {
   rootURL = config.rootURL;
 }
 
+
 Router.map(function () {
   //Add some nested routes
   this.route('authors', function () {
